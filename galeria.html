@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- link de boxicons  -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Galería</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,24 +17,67 @@
     <main>
 
 
+        <!-- la disposicion de la galeria va a ser de 3 horizontales y 4 verticales, alternando una y una fila. -->
+
         <section class="containerGrid">
 
-            <img src="assets/img1" alt="" class="img img1">
-            <img src="assets/img2" alt="" class="img img2">
-            <img src="assets/img3" alt="" class="img img3">
-            <img src="assets/img4" alt="" class="img img4">
-            <img src="assets/img5" alt="" class="img img5">
-            <img src="assets/img6" alt="" class="img img6">
-            <img src="assets/img7" alt="" class="img img7">
-            <img src="assets/img8" alt="" class="img img8">
-            <img src="assets/img9" alt="" class="img img9">
-            <img src="assets/img10" alt="" class="img img10">
+            <!-- container con img horizontales  -->
+            <div class="gridHorizontales">
+
+                <img src="assets/horizontales/img1.jpg" alt="Cerro Capilla nevado, Bariloche" class="img img1">
+                <img src="assets/horizontales/img6.jpg" alt="Flamenco en Mar Chiquita, Córdoba" class="img img6">
+                <img src="assets/horizontales/img7.jpg" alt="Rayos del amanecer." class="img img7">
+                <img src="assets/horizontales/img8.jpg" alt="Pintar con luz." class="img img8">
+                <img src="assets/horizontales/img10.jpg" alt="Inmensidad Invernal" class="img img10">
+                <img src="assets/horizontales/img11.jpg" alt="Llao Llao, Circuito Chico, Bariloche." class="img img11">
+                <img src="assets/horizontales/img12.jpg" alt="Amanecer sobre el Nahuel Huapi, Bariloche" class="img img12">
+    
+            </div>
+
+            <!-- container con img verticales  -->
+            <div class="gridVerticales">
+
+                <img src="assets/verticales/img2.jpg" alt="Cascada Grande, Córdoba" class="img img2">
+                <img src="assets/verticales/img3.jpg" alt="Piedra Parada en Co. Colorado, Córdoba" class="img img3">
+                <img src="assets/verticales/img4.jpg" alt="La Cumbrecita, Córdoba" class="img img4">
+                <img src="assets/verticales/img5.jpg" alt="Amanecer sobre Carlos Paz, Córdoba" class="img img5">
+                <img src="assets/verticales/img9.jpg" alt="Condor Andino" class="img img9">
+
+            </div>
+            
+            <div class="containerImg">
+                <img src="" alt="" class="imgShow">
+                <i class='bx bx-x'></i>
+                <p class="copy"></p>
+            </div>
+
+
+
+
 
 
 
         </section>
 
 
+
     </main>
+
+
+
+
+
+
+
+
+
+    <!-- google fonts import  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+        </style>
+
+    <!-- archivo JS  -->
+
+    <script src="js/galeria.js"></script>
 </body>
 </html>
