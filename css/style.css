@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0; }
+
+.containerGridGaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-areas: "himg1 himg2 himg3" "vimg1 vimg2 vimg3" "himg4 himg5 himg6" "vimg4 vimg5 vimg6" "himg7 himg8 himg9" "vimg7 vimg8 vimg9";
+  gap: 0.5em; }
+  .containerGridGaleria .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+    .containerGridGaleria .img:hover {
+      cursor: pointer; }
+  .containerGridGaleria .horizontalImg1 {
+    grid-area: himg1; }
+  .containerGridGaleria .horizontalImg2 {
+    grid-area: himg2; }
+  .containerGridGaleria .horizontalImg3 {
+    grid-area: himg3; }
+  .containerGridGaleria .horizontalImg4 {
+    grid-area: himg4; }
+  .containerGridGaleria .horizontalImg5 {
+    grid-area: himg5; }
+  .containerGridGaleria .horizontalImg6 {
+    grid-area: himg6; }
+  .containerGridGaleria .horizontalImg7 {
+    grid-area: himg7; }
+  .containerGridGaleria .img1 {
+    grid-area: vimg1; }
+  .containerGridGaleria .img2 {
+    grid-area: vimg2; }
+  .containerGridGaleria .img3 {
+    grid-area: vimg3; }
+  .containerGridGaleria .img4 {
+    grid-area: vimg4; }
+  .containerGridGaleria .img5 {
+    grid-area: vimg5; }
+  .containerGridGaleria .containerFullImg {
+    position: fixed;
+    height: 95%;
+    width: 95%;
+    background: rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%); }
+    .containerGridGaleria .containerFullImg .imgShow {
+      height: 80%;
+      display: block;
+      object-fit: cover; }
+    .containerGridGaleria .containerFullImg .descripcion {
+      color: white;
+      bottom: 2em; }
+    .containerGridGaleria .containerFullImg .bx.bx-x {
+      position: absolute;
+      color: white;
+      top: 1em;
+      right: 1em;
+      font-size: 2em;
+      cursor: pointer; }
