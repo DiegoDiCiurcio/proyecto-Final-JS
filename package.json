@@ -1,7 +1,6 @@
 {
   "name": "js-proyecto-final",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +12,17 @@
   "devDependencies": {
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
-  }
+  },
+  "dependencies": {
+    "sweetalert2": "^11.4.33"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoDiCiurcio/proyecto-Final-JS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DiegoDiCiurcio/proyecto-Final-JS/issues"
+  },
+  "homepage": "https://github.com/DiegoDiCiurcio/proyecto-Final-JS#readme",
+  "description": ""
 }

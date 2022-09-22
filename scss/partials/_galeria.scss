@@ -88,6 +88,7 @@
         align-items: center;
         transform: translateX(-120%);
         
+
         
 
         .mostrarImg {
@@ -95,7 +96,14 @@
             height: 85%;
             display: block;
             // object-fit: cover;
+            transform: scale (0);
+            transition: transform 0.3s 0.3s;
+
         }
+        .show {
+            transform: scale(1);
+        }
+        
 
 
 
@@ -112,14 +120,17 @@
             color: white;
             top: 1em;
             right: 1em;
-            font-size: 2em;
+            font-size: 2.5em;
             cursor: pointer;
         }
 
         
     }
-    .desplazar{
+    // class para TOGGLE de event listener 
+    .move{
         transform: translateX(0%);
-    } 
-
+        transition: transform .5s ease-in;
+    }  
+    
+    
 }

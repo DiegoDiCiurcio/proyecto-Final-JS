@@ -54,7 +54,11 @@
     .containerGridGaleria .containerFullImg .mostrarImg {
       height: 1em;
       height: 85%;
-      display: block; }
+      display: block;
+      transform: scale 0;
+      transition: transform 0.3s 0.3s; }
+    .containerGridGaleria .containerFullImg .show {
+      transform: scale(1); }
     .containerGridGaleria .containerFullImg .descripcion {
       color: white;
       bottom: 2em;
@@ -66,7 +70,8 @@
       color: white;
       top: 1em;
       right: 1em;
-      font-size: 2em;
+      font-size: 2.5em;
       cursor: pointer; }
-  .containerGridGaleria .desplazar {
-    transform: translateX(0%); }
+  .containerGridGaleria .move {
+    transform: translateX(0%);
+    transition: transform .5s ease-in; }
