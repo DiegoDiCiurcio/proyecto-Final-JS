@@ -1,94 +1,113 @@
-.containerGridGaleria{
+.containerGridGaleria {
     display: grid;
     grid-template-columns: repeat(3, 33%);
-        grid-template-areas: "himg1 himg2 himg3"
-                            "vimg1 vimg2 vimg3"
-                            "himg4 himg5 himg6"
-                            "vimg4 vimg5 vimg6"
-                            "himg7 himg8 himg9"
-                            "vimg7 vimg8 vimg9"
-                            ;
-        gap: 0.5em;
+    grid-template-areas: "himg1 himg2 himg3"
+        "vimg1 vimg2 vimg3"
+        "himg4 himg5 himg6"
+        "vimg4 vimg5 vimg6"
+        "himg7 himg8 himg9"
+        "vimg7 vimg8 vimg9"
+    ;
+    gap: 0.5em;
 
     // .gridHorizontales{
-        
-
-        .img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            &:hover{
-                cursor: pointer;
-            }
-        }
-        .horizontalImg1{
-            grid-area: himg1;
-        }
-        .horizontalImg2{
-            grid-area: himg2;
-        }
-        .horizontalImg3{
-            grid-area: himg3;
-        }
-        .horizontalImg4{
-            grid-area: himg4;
-        }
-        .horizontalImg5{
-            grid-area: himg5;
-        }
-        .horizontalImg6{
-            grid-area: himg6;
-        }
-        .horizontalImg7{
-            grid-area: himg7;
-        }
-
-        // Imagenes VERTICALES: 
-
-        .img1{
-            grid-area: vimg1;
-        }
-        
-        .img2{
-            grid-area: vimg2;
-        }
-        
-        .img3{
-            grid-area: vimg3;
-        }
-        
-        .img4{
-            grid-area: vimg4;
-        }
-        
-        .img5{
-            grid-area: vimg5;
-        }
 
 
-        .containerFullImg {
-            position: fixed;
-            height: 95%;
-            width: 95%;
-            background: rgba(0, 0, 0, 0.404);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transform: translateX(-80%);
+    .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .horizontalImg1 {
+        grid-area: himg1;
+    }
+
+    .horizontalImg2 {
+        grid-area: himg2;
+    }
+
+    .horizontalImg3 {
+        grid-area: himg3;
+    }
+
+    .horizontalImg4 {
+        grid-area: himg4;
+    }
+
+    .horizontalImg5 {
+        grid-area: himg5;
+    }
+
+    .horizontalImg6 {
+        grid-area: himg6;
+    }
+
+    .horizontalImg7 {
+        grid-area: himg7;
+    }
+
+    // Imagenes VERTICALES: 
+
+    .img1 {
+        grid-area: vimg1;
+    }
+
+    .img2 {
+        grid-area: vimg2;
+    }
+
+    .img3 {
+        grid-area: vimg3;
+    }
+
+    .img4 {
+        grid-area: vimg4;
+    }
+
+    .img5 {
+        grid-area: vimg5;
+    }
+
+
+    .containerFullImg {
+        position: fixed;
+        height: 100%;
+        justify-self: center;
+        width: 94%;
+        background: rgba(20, 20, 20, 0.55);
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-120%);
+        
         
 
-    
-        .mostrarImg{
-            height: 80%;
+        .mostrarImg {
+            height:  1em;
+            height: 85%;
             display: block;
-            object-fit: cover;
+            // object-fit: cover;
         }
-        .descripcion{
+
+
+
+        .descripcion {
             color: white;
             bottom: 2em;
+            padding-top: 1em;
+            letter-spacing: 2px;
+            font-size: 1.5em;
         }
 
-        .bx.bx-x{
+        .bx.bx-x {
             position: absolute;
             color: white;
             top: 1em;
@@ -96,8 +115,11 @@
             font-size: 2em;
             cursor: pointer;
         }
-    }
-    .desplazamiento{
+
         
     }
-    }
+    .desplazar{
+        transform: translateX(0%);
+    } 
+
+}

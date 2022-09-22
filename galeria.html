@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- link de boxicons  -->
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link de boxicons  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link bootstrap: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
     <title>Galería</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
 
@@ -23,30 +31,103 @@
 
             <!-- img horizontales  -->
 
-                <img src="assets/horizontales/img1.jpg" alt="Cerro Capilla nevado, Bariloche" class="img horizontalImg1">
-                <img src="assets/horizontales/img2.jpg" alt="Flamenco en Mar Chiquita, Córdoba" class="img horizontalImg2">
-                <img src="assets/horizontales/img3.jpg" alt="Rayos del amanecer." class="img horizontalImg3">
-                <img src="assets/horizontales/img4.jpg" alt="Pintar con luz." class="img horizontalImg4">
-                <img src="assets/horizontales/img5.jpg" alt="Inmensidad Invernal" class="img horizontalImg5">
-                <img src="assets/horizontales/img6.jpg" alt="Llao Llao, Circuito Chico, Bariloche." class="img horizontalImg6">
-                <img src="assets/horizontales/img7.jpg" alt="Amanecer sobre el Nahuel Huapi, Bariloche" class="img horizontalImg7">
-    
+            <img src="assets/horizontales/img1.jpg" alt="Cerro Capilla nevado, Bariloche" class="img horizontalImg1">
+            <img src="assets/horizontales/img2.jpg" alt="Flamenco en Mar Chiquita, Córdoba" class="img horizontalImg2">
+            <img src="assets/horizontales/img3.jpg" alt="Rayos del amanecer." class="img horizontalImg3">
+            <img src="assets/horizontales/img4.jpg" alt="Pintar con luz." class="img horizontalImg4">
+            <img src="assets/horizontales/img5.jpg" alt="Inmensidad Invernal" class="img horizontalImg5">
+            <img src="assets/horizontales/img6.jpg" alt="Llao Llao, Circuito Chico, Bariloche."
+                class="img horizontalImg6">
+            <img src="assets/horizontales/img7.jpg" alt="Amanecer sobre el Nahuel Huapi, Bariloche"
+                class="img horizontalImg7">
+
 
             <!-- img verticales  -->
 
-                <img src="assets/verticales/img1.jpg" alt="Cascada Grande, Córdoba" class="img img1">
-                <img src="assets/verticales/img2.jpg" alt="Piedra Parada en Co. Colorado, Córdoba" class="img img2">
-                <img src="assets/verticales/img3.jpg" alt="La Cumbrecita, Córdoba" class="img img3">
-                <img src="assets/verticales/img4.jpg" alt="Amanecer sobre Carlos Paz, Córdoba" class="img img4">
-                <img src="assets/verticales/img5.jpg" alt="Condor Andino" class="img img5">
+            <img src="assets/verticales/img1.jpg" alt="Cascada Grande, Córdoba" class="img img1">
+            <img src="assets/verticales/img2.jpg" alt="Piedra Parada en Co. Colorado, Córdoba" class="img img2">
+            <img src="assets/verticales/img3.jpg" alt="La Cumbrecita, Córdoba" class="img img3">
+            <img src="assets/verticales/img4.jpg" alt="Amanecer sobre Carlos Paz, Córdoba" class="img img4">
+            <img src="assets/verticales/img5.jpg" alt="Condor Andino" class="img img5">
+
+            <div class="containerFullImg desplazar">
+                <img src="assets/verticales/img3.jpg" alt="" class="mostrarImg">
+                <i class='bx bx-x'></i>
+                <p class="descripcion">DESCRIPCION
+                </p>
+
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    CREAR CUADRO </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Crea tu CUADRO!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <section id="seleccionarPropiedades__container">
+
+                                    <div class="tamañosDisponibles__container">
+                                        <h5>QUE TAMAÑO QUIERES?</h5>
+                                        <select name="tamañoDeCuadro" id="tamañosDisponibles"
+                                            onchange="tamañoSeleccionado()">
+
+                                            <!-- inyecto desde JS todos las opciones -->
+
+                                        </select>
+                                    </div>
+
+                                    <div class="papelesDisponibles__container">
+                                        <h5>EN QUE PAPEL TE GUSTARIA?</h5>
+                                        <select name="papelDeCuadro" id="papelesDisponibles"
+                                            onchange="papelSeleccionado()">
+
+                                            <!-- inyecto desde JS todos las opciones -->
+
+                                        </select>
+                                    </div>
+
+                                    <div class="montajesDisponibles__container">
+                                        <h5>ELEGI EL MONTAJE</h5>
+                                        <select name="montajeDeCuadro" id="montajesDisponibles"
+                                            onchange="montajeSeleccionado()">
+
+                                            <!-- inyecto desde JS todos las opciones -->
+
+                                        </select>
+                                    </div>
+
+                                    <div class="marcosDisponibles__container">
+                                        <h5>ELEGI TU MARCO</h5>
+                                        <select name="marcoDeCuadro" id="marcosDisponibles"
+                                            onchange="marcoSeleccionado()">
+
+                                            <!-- inyecto desde JS todos las opciones -->
+
+                                        </select>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" id="enviarAlCarrito"
+                                    name="enviarAlCarrito">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
-        <div class="containerFullImg">
-            <img src="" alt="" class="mostrarImg">
-            <i class='bx bx-x'></i>
-            <p class="descripcion"></p>
-        </div>
+
 
 
 
@@ -63,10 +144,16 @@
     <!-- google fonts import  -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
-        </style>
+    </style>
+
+    <!-- script bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
     <!-- archivo JS  -->
 
     <script src="js/galeria.js"></script>
 </body>
+
 </html>

@@ -40,20 +40,27 @@
     grid-area: vimg5; }
   .containerGridGaleria .containerFullImg {
     position: fixed;
-    height: 95%;
-    width: 95%;
-    background: rgba(0, 0, 0, 0.404);
+    height: 100%;
+    justify-self: center;
+    width: 94%;
+    background: rgba(20, 20, 20, 0.55);
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    transform: translateX(-100%); }
-    .containerGridGaleria .containerFullImg .imgShow {
-      height: 80%;
-      display: block;
-      object-fit: cover; }
+    transform: translateX(-120%); }
+    .containerGridGaleria .containerFullImg .mostrarImg {
+      height: 1em;
+      height: 85%;
+      display: block; }
     .containerGridGaleria .containerFullImg .descripcion {
       color: white;
-      bottom: 2em; }
+      bottom: 2em;
+      padding-top: 1em;
+      letter-spacing: 2px;
+      font-size: 1.5em; }
     .containerGridGaleria .containerFullImg .bx.bx-x {
       position: absolute;
       color: white;
@@ -61,3 +68,5 @@
       right: 1em;
       font-size: 2em;
       cursor: pointer; }
+  .containerGridGaleria .desplazar {
+    transform: translateX(0%); }
